@@ -11,11 +11,11 @@ Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 # Largeur de la fenêtre
-[int] $width = 400
+[int] $width = 800
 # Hauter de la fenêtre
-[int] $height = 400
+[int] $height = 800
 # Taille du bouton
-[int] $btnSize = 40
+[int] $btnSize = 80
 # Le score
 [int] $score
 # Timer
