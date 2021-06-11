@@ -65,7 +65,7 @@ $timer.Start()
 
 # Changer la couleur du fond d'ecran
 function ChangeBackgroundColor {
-    $r = Get-Random -Maximum 256
+    $r = Get-Random -Maximum 256j,n
     $g = Get-Random -Maximum 256
     $b = Get-Random -Maximum 256
 
