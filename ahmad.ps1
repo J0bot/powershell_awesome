@@ -43,11 +43,11 @@ $btn.Add_Click({
         $timer.Interval = $timer.Interval - 10
         Write-Host $timer.Interval
     }
-    
 })
 $btn.Size = New-Object Size($btnSize, $btnSize)
 $btn.Image = $image
-$btn.BackgroundImageLayout = [ImageLayout]::Stretch
+$btn.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+$btn.FlatAppearance.BorderSize = 0
 
 # Score
 
@@ -92,4 +92,5 @@ $frm.ShowDialog()
 $timer.Stop()
 $timer.Dispose()
 [GC]::Collect()
+$frm.Dispose()
 $score= 0 
