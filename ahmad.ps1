@@ -6,7 +6,6 @@
 Using Namespace System.Windows.Forms
 Using Namespace System.Drawing
 
-
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
@@ -23,11 +22,11 @@ Add-Type -AssemblyName System.Drawing
 
 # Form
 $frm = New-Object Form
-
 $frm.Size = New-Object Size($width, $height)
 
 # Image
 $image = [System.Drawing.Image]::FromFile("lmaoo.png")
+
 # Button
 $btn = New-Object Button
 $btn.Add_Click({
@@ -50,7 +49,6 @@ $btn.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
 $btn.FlatAppearance.BorderSize = 0
 
 # Score
-
 $lblScore = New-Object Label
 $lblScore.Font = New-Object Font('Consolas', 24)
 $lblScore.Size = New-Object Size($width, 50)
